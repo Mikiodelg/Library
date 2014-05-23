@@ -85,7 +85,7 @@
 	<!-- <realm-name>westerios</realm-name> -->
 </login-config>
 <security-role>
-	<role-name>Admin</role-name>
+	<role-name>administador</role-name>
 </security-role>
 
 <security-constraint>
@@ -106,7 +106,7 @@
 		<http-method>DELETE</http-method>
 	</web-resource-collection>
 	<auth-constraint>
-		<role-name>Admin</role-name>
+		<role-name>administrador</role-name>
 	</auth-constraint>
 </security-constraint>
 

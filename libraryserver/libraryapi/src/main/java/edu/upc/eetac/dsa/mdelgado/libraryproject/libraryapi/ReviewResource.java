@@ -88,10 +88,10 @@ public class ReviewResource {
 	}
 	
 	@GET
-	@Path("/{bookisbn}")
+	@Path("/{isbn}")
 	@Produces(MediaType.LIBRARY_API_REVIEW)
 	
-	public Review getReviewfromdb(@PathParam("bookisbn") String bookisbn){
+	public Review getReviewfromdb(@PathParam("isbn") String bookisbn){
 	Review review = new Review();
 	Connection conn = null;
 

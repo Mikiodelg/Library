@@ -17,8 +17,8 @@ import edu.upc.eetac.dsa.mdelgado.libraryproject.libraryapi.ReviewResource;
 public class Review {
 	
 	@InjectLinks({
-		@InjectLink(resource = ReviewResource.class, style = Style.ABSOLUTE, rel = "review", title = "Latest review", type = MediaType.LIBRARY_API_REVIEW_COLLECTION)})
-//		@InjectLink(resource = ReviewResource.class, style = Style.ABSOLUTE, rel = "self edit", title = "review", type = MediaType.LIBRARY_API_REVIEW, method = "getReviewfromdb", bindings = @Binding(name = "isbn", value = "${instance.isbn}")) })
+		@InjectLink(resource = ReviewResource.class, style = Style.ABSOLUTE, rel = "review", title = "Latest review", type = MediaType.LIBRARY_API_REVIEW_COLLECTION),
+		@InjectLink(resource = ReviewResource.class, style = Style.ABSOLUTE, rel = "self edit", title = "review", type = MediaType.LIBRARY_API_REVIEW, method = "getReviewfromdb", bindings = @Binding(name = "isbn", value = "${instance.isbn}")) })
 
 	private List<Link> links;
 	private String id;
